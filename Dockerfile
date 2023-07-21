@@ -2,9 +2,9 @@ FROM ruby:2.7
 WORKDIR /image-linux-ruby-backend-qa
 COPY . /image-linux-ruby-backend-qa
 
-RUN wget -q https://github.com/allure-framework/allure2/releases/download/2.14.0/allure-2.14.0.tgz
-RUN tar -zxvf allure-2.14.0.tgz -C /opt/
-RUN ln -s /opt/allure-2.14.0/bin/allure /usr/bin/allure
+RUN wget -q https://github.com/allure-framework/allure2/releases/download/2.19.0/allure-2.19.0.tgz
+RUN tar -zxvf allure-2.19.0.tgz -C /opt/
+RUN ln -s /opt/allure-2.19.0/bin/allure /usr/bin/allure
 
 RUN apt update
 RUN apt install -y vim
